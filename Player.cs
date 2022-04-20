@@ -10,13 +10,24 @@ namespace demo
    {
         private string Name { get; set; }
         private int Budget{ get; set; }
-        private int[] Ticket { get; set; }
+        private Lottery lottery { get; set; }
 
-        public Player(string Name, int Budget, int[] Tic)
+        public Player(string Name, int Budget)
         {
             this.Name = Name;
             this.Budget = Budget;
-            this.Ticket = Tic;
+        }
+
+        public void Update(Lottery lottery)
+        {
+            Console.WriteLine("Notified {0} of {1}'s " +
+                "change to {2:C}", Name, lottery.number);
+        }
+
+        public Lottery Lottery
+        {
+            get { return lottery; }
+            set { lottery = value; }
         }
         
     }

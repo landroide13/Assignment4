@@ -4,12 +4,12 @@ namespace demo
 {
     abstract class Lottery
     {
-        private int[] Numbers;
+        private int Number;
         private List<IPlayer> players = new List<IPlayer>();
 
-        public Lottery(int[] Numbers)
+        public Lottery(int Num)
         {
-            this.Numbers = Numbers;
+            this.Number = Num;
         }
         public void Attach(IPlayer player)
         {
@@ -28,8 +28,20 @@ namespace demo
             Console.WriteLine("");
         }
 
-        
-
+        public int number
+        {
+            get { return Number; }
+            set
+            {
+                if (Number != value)
+                {
+                    Number = value;
+                    Notify();
+                }
+            }
+        }
+    
+    
 
     }
 
