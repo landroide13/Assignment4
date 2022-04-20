@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "FlVpzamrtfLAWyLnQbnoWVKkj0eELOJUz627rJcFPzru3Sae2E+gYtxKy1N9i2XlTYsKesK5zrsQtQa9tBAbMw==",
+  "success": true,
+  "projectFilePath": "/home/landroide/Desktop/dotnet/demo/demo.csproj",
+  "expectedPackageFiles": [
+    "/home/landroide/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.0/microsoft.aspnetcore.app.ref.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

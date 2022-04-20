@@ -1,0 +1,15 @@
+/home/landroide/Desktop/dotnet/demo/bin/Debug/net6.0/demo
+/home/landroide/Desktop/dotnet/demo/bin/Debug/net6.0/demo.deps.json
+/home/landroide/Desktop/dotnet/demo/bin/Debug/net6.0/demo.runtimeconfig.json
+/home/landroide/Desktop/dotnet/demo/bin/Debug/net6.0/demo.dll
+/home/landroide/Desktop/dotnet/demo/bin/Debug/net6.0/ref/demo.dll
+/home/landroide/Desktop/dotnet/demo/bin/Debug/net6.0/demo.pdb
+/home/landroide/Desktop/dotnet/demo/obj/Debug/net6.0/demo.csproj.AssemblyReference.cache
+/home/landroide/Desktop/dotnet/demo/obj/Debug/net6.0/demo.GeneratedMSBuildEditorConfig.editorconfig
+/home/landroide/Desktop/dotnet/demo/obj/Debug/net6.0/demo.AssemblyInfoInputs.cache
+/home/landroide/Desktop/dotnet/demo/obj/Debug/net6.0/demo.AssemblyInfo.cs
+/home/landroide/Desktop/dotnet/demo/obj/Debug/net6.0/demo.csproj.CoreCompileInputs.cache
+/home/landroide/Desktop/dotnet/demo/obj/Debug/net6.0/demo.dll
+/home/landroide/Desktop/dotnet/demo/obj/Debug/net6.0/ref/demo.dll
+/home/landroide/Desktop/dotnet/demo/obj/Debug/net6.0/demo.pdb
+/home/landroide/Desktop/dotnet/demo/obj/Debug/net6.0/demo.genruntimeconfig.cache
