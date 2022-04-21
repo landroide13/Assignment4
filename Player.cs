@@ -9,13 +9,16 @@ namespace demo
     class Player:IPlayer
    {
         private string Name { get; set; }
+
+        private int[] Numbers { get; set; }
         private int Budget{ get; set; }
         private Lottery lottery { get; set; }
 
-        public Player(string Name, int Budget)
+        public Player(string Name, int Budget, int[] Numbers)
         {
             this.Name = Name;
             this.Budget = Budget;
+            this.Numbers = Numbers;
         }
 
         public void Update(Lottery lottery)

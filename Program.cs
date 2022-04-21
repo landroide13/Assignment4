@@ -11,6 +11,12 @@ namespace demo
             return rand_num;
         } 
 
+        public class Ticket : Lottery
+        {
+            public Ticket (int Number)
+                : base(Number){}
+        }
+
 
 
         static void Main(string[] args)
