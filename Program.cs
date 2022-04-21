@@ -1,4 +1,4 @@
-﻿///using System;
+﻿using System;
 
 namespace demo
 {
@@ -19,22 +19,28 @@ namespace demo
 
         static void Main(string[] args)
         {
-            Console.WriteLine("**** Welcome to the Simple Lotto ****");
+            Console.WriteLine("***** Welcome to the Simple Lotto ****");
 
-            Console.WriteLine("******* Welcome... ***********");
+            Console.WriteLine("******* Welcome ***********");
 
             Console.WriteLine();
 
-            int[] arrTama = {1,3,5};
+            int[] TamaTicket = {1,3,5};
 
-            int[] arrBob = {4,12,66};
+            int[] BobTicket = {4,12,66};
 
-            int[] arrCeasar = {1,3,5};
+            int[] CeasarTicket = {1,3,5};
 
             Ticket tic1 = new Ticket(NumGem(1, 99));
-            tic1.Attach(new Player("Tama", 12,arrTama));
-            tic1.Attach(new Player("Bob", 12, arrBob));
-            tic1.Attach(new Player("Caesar", 12, arrCeasar));
+            tic1.Attach(new Player("Tama", 12,TamaTicket));
+            tic1.Attach(new Player("Bob", 12, BobTicket));
+            tic1.Attach(new Player("Caesar", 12, CeasarTicket));
+
+            tic1.number = NumGem(1, 99);
+            tic1.number = NumGem(1, 99);
+            tic1.number = NumGem(1, 99);
+            tic1.number = NumGem(1, 99);
+            
 
            
         }
