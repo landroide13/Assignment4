@@ -5,11 +5,11 @@ namespace demo
     interface IPlayer
     {
         void Update(Lottery lottery);
+        void CheckNumber(Lottery lottery);
     }
     class Player:IPlayer
    {
         private string Name { get; set; }
-
         private int[] Numbers { get; set; }
         private int Budget{ get; set; }
         private Lottery lottery { get; set; }
@@ -23,8 +23,18 @@ namespace demo
 
         public void Update(Lottery lottery)
         {
-            Console.WriteLine("Notified {0} of {1}'s " +
-                "change to {2:C}", Name, lottery.number);
+            Console.WriteLine("The Winnning Number of the Week is {0} " +  lottery.number);
+        }
+
+        public void CheckNumber(Lottery lottery)
+        {
+            foreach(int num in Numbers)
+            {
+                if(num == lottery.number)
+                {
+                    Console.WriteLine("We have a Winner, Congrats {0} " +  Name);
+                }
+            }
         }
 
         public Lottery Lottery

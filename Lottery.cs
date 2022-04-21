@@ -19,15 +19,15 @@ namespace demo
         {
             players.Remove(player);
         }
-        public void Notify()
+        public void Game()
         {
             foreach (IPlayer player in players)
             {
                 player.Update(this);
+                player.CheckNumber(this);
             }
             Console.WriteLine("");
         }
-
         public int number
         {
             get { return Number; }
@@ -36,7 +36,7 @@ namespace demo
                 if (Number != value)
                 {
                     Number = value;
-                    Notify();
+                    Game();
                 }
             }
         }
