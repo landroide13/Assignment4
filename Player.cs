@@ -1,4 +1,4 @@
-using System;
+//using System;
 
 namespace demo
 {
@@ -9,10 +9,10 @@ namespace demo
     }
     class Player:IPlayer
    {
-        private string Name { get; set; }
-        private int[] Numbers { get; set; }
-        private int Budget{ get; set; }
-        private Lottery lottery { get; set; }
+        private string Name;
+        private int[] Numbers;
+        private int Budget;
+        private Lottery lottery;
 
         public Player(string Name, int Budget, int[] Numbers)
         {
