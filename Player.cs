@@ -23,7 +23,7 @@ namespace demo
 
         public void Update(Lottery lottery)
         {
-            Console.WriteLine("The Winnning Number of the Week is {0} " +  lottery.number);
+            Console.WriteLine("The Winnning Number of the Week is: " +  lottery.number);
         }
 
         public void CheckNumber(Lottery lottery)
@@ -32,10 +32,15 @@ namespace demo
             {
                 if(num == lottery.number)
                 {
-                    Console.WriteLine("We have a Winner, Congrats {0} " +  Name);
+                    Console.WriteLine("We have a Winner, Congrats to: " +  Name);
                 }
             }
         }
+        public void CheckBudget()
+        {
+
+        }
+
         public Lottery Lottery
         {
             get { return lottery; }

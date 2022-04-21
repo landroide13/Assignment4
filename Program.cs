@@ -25,21 +25,27 @@ namespace demo
 
             Console.WriteLine();
 
-            int[] TamaTicket = {1,3,5};
+            int[] TamaTicket = {1, 3, 5, 6, 9};
 
-            int[] BobTicket = {4,12,66};
+            int[] BobTicket = {4,7};
 
-            int[] CeasarTicket = {1,3,5};
+            int[] CeasarTicket = {2,8,10};
 
-            Ticket tic1 = new Ticket(NumGem(1, 99));
-            tic1.Attach(new Player("Tama", 12,TamaTicket));
-            tic1.Attach(new Player("Bob", 12, BobTicket));
-            tic1.Attach(new Player("Caesar", 12, CeasarTicket));
+            int TamaBudget = 50;
 
-            tic1.number = NumGem(1, 99);
-            tic1.number = NumGem(1, 99);
-            tic1.number = NumGem(1, 99);
-            tic1.number = NumGem(1, 99);
+            int BobBudget = 8;
+
+            int CaesarBudget = 35;
+
+            Ticket tic1 = new Ticket(NumGem(1, 10));
+            tic1.Attach(new Player("Tama", TamaBudget ,TamaTicket));
+            tic1.Attach(new Player("Bob", BobBudget, BobTicket));
+            tic1.Attach(new Player("Caesar", CaesarBudget, CeasarTicket));
+
+            tic1.number = NumGem(1, 10);
+            tic1.number = NumGem(1, 10);
+            tic1.number = NumGem(1, 10);
+            tic1.number = NumGem(1, 10);
             
 
            
