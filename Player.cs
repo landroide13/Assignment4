@@ -36,7 +36,6 @@ namespace demo
                 }
             }
         }
-
         public Lottery Lottery
         {
             get { return lottery; }
