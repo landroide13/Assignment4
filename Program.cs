@@ -51,6 +51,12 @@ namespace demo
             tic1.number = NumGem(1, 10);
             tic1.number = NumGem(1, 10);
 
+            tic1.number = NumGem(1, 10);
+            tic1.number = NumGem(1, 10);
+            tic1.number = NumGem(1, 10);
+            tic1.number = NumGem(1, 10);
+            
+
         }
 
     }        

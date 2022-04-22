@@ -14,7 +14,7 @@ namespace demo
         private int Budget;
         private Lottery lottery;
 
-        static private int cb;
+        //static private int cb;
 
         public Player(string Name, int Budget, int[] Numbers)
         {
@@ -25,13 +25,14 @@ namespace demo
 
         public Player(){}
 
-        public void DisplayNumbers(int[] nums)
+        public int GetBudget()
         {
-            foreach(int num in nums)
-            {
-                string stn = num.ToString();
-                Console.Write(" " + stn + " ");
-            }
+            return Budget;
+        }
+
+        public string GetName()
+        {
+            return Name;
         }
 
         public void WeekNumber(Lottery lottery)
@@ -43,18 +44,23 @@ namespace demo
         {
             foreach(int num in Numbers)
             {
-                if(num == lottery.number)
+                if(Budget > 0)
                 {
-                    Console.WriteLine("****** WINNER ******");
-                    Console.WriteLine("We have a Winner, Congrats to: " +  Name);
-                    Console.WriteLine("*******************");
-                    cb++;
+                     if(num == lottery.number)
+                    {
+                        Budget = Budget - 1;
+                        Console.WriteLine("****** WINNER ******");
+                        Console.WriteLine("We have a Winner, Congrats to: " +  Name + " ,Remining Budget: " + Budget);
+                        Console.WriteLine("*******************");
+                        
+                    }
+                }
+                else
+               {
+                    Console.WriteLine(Name + " ,Is out budget");
                 }
             }
-            if(Budget <= cb)
-            {
-              Console.WriteLine("The Player " + Name +" ,is out of Budget ");
-            }
+            
         }
         public Lottery Lottery
         {

@@ -26,7 +26,7 @@ namespace demo
             pl.WeekNumber(this);
 
             foreach (IPlayer player in players)
-            {
+            {   
                 player.CheckNumber(this);
             }
             Console.WriteLine("");
@@ -44,8 +44,6 @@ namespace demo
             }
         }
     
-    
-
     }
 
 }
