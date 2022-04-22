@@ -42,6 +42,12 @@ namespace demo
             tic1.Attach(new Player("Bob", BobBudget, BobTicket));
             tic1.Attach(new Player("Caesar", CaesarBudget, CeasarTicket));
 
+            Console.WriteLine("Player: Tama");
+            Console.WriteLine("Player: Bob");
+            Console.WriteLine("Player: Ceasar");
+            Console.WriteLine();
+
+
             tic1.number = NumGem(1, 10);
             tic1.number = NumGem(1, 10);
             tic1.number = NumGem(1, 10);
