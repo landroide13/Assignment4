@@ -31,11 +31,11 @@ namespace demo
 
             int[] CeasarTicket = {2,8,10};
 
-            int TamaBudget = 50;
+            int TamaBudget = 6;
 
-            int BobBudget = 8;
+            int BobBudget = 3;
 
-            int CaesarBudget = 35;
+            int CaesarBudget = 5;
 
             Ticket tic1 = new Ticket(NumGem(1, 10));
             tic1.Attach(new Player("Tama", TamaBudget ,TamaTicket));
@@ -45,8 +45,11 @@ namespace demo
             tic1.number = NumGem(1, 10);
             tic1.number = NumGem(1, 10);
             tic1.number = NumGem(1, 10);
-            //tic1.number = NumGem(1, 10);
-            
+            tic1.number = NumGem(1, 10);
+            tic1.number = NumGem(1, 10);
+            tic1.number = NumGem(1, 10);
+            tic1.number = NumGem(1, 10);
+            tic1.number = NumGem(1, 10);
 
            
         }
