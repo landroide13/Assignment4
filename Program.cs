@@ -21,7 +21,7 @@ namespace demo
         {
             Console.WriteLine("***** Welcome to the Simple Lotto ****");
 
-            Console.WriteLine("******* Welcome ***********");
+            Console.WriteLine("******* Welcome ********");
 
             Console.WriteLine();
 
@@ -51,7 +51,6 @@ namespace demo
             tic1.number = NumGem(1, 10);
             tic1.number = NumGem(1, 10);
 
-           
         }
 
     }        

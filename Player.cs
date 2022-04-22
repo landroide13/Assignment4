@@ -45,7 +45,9 @@ namespace demo
             {
                 if(num == lottery.number)
                 {
+                    Console.WriteLine("****** WINNER ******");
                     Console.WriteLine("We have a Winner, Congrats to: " +  Name);
+                    Console.WriteLine("*******************");
                     cb++;
                 }
             }
