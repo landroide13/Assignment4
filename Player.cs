@@ -51,17 +51,11 @@ namespace demo
                     cb++;
                 }
             }
-
             if(Budget <= cb)
             {
-              Console.WriteLine("The Player " + Name +"is out of Budget ");
+              Console.WriteLine("The Player " + Name +" ,is out of Budget ");
             }
         }
-        public void CheckBudget()
-        {
-
-        }
-
         public Lottery Lottery
         {
             get { return lottery; }
