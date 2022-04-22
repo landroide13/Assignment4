@@ -4,7 +4,7 @@ namespace demo
 {
     interface IPlayer
     {
-        void Update(Lottery lottery);
+        void WeekNumber(Lottery lottery);
         void CheckNumber(Lottery lottery);
     }
     class Player:IPlayer
@@ -14,6 +14,8 @@ namespace demo
         private int Budget;
         private Lottery lottery;
 
+        static private int cb;
+
         public Player(string Name, int Budget, int[] Numbers)
         {
             this.Name = Name;
@@ -21,9 +23,20 @@ namespace demo
             this.Numbers = Numbers;
         }
 
-        public void Update(Lottery lottery)
+        public Player(){}
+
+        public void DisplayNumbers(int[] nums)
         {
-            Console.WriteLine("The Winnning Number of the Week is: " +  lottery.number);
+            foreach(int num in nums)
+            {
+                string stn = num.ToString();
+                Console.Write(" " + stn + " ");
+            }
+        }
+
+        public void WeekNumber(Lottery lottery)
+        {
+            Console.WriteLine("The Number of the Week is: " + lottery.number);
         }
 
         public void CheckNumber(Lottery lottery)
@@ -33,7 +46,13 @@ namespace demo
                 if(num == lottery.number)
                 {
                     Console.WriteLine("We have a Winner, Congrats to: " +  Name);
+                    cb++;
                 }
+            }
+
+            if(Budget <= cb)
+            {
+                 Console.WriteLine("The Player " + Name +"is out of Budget ");
             }
         }
         public void CheckBudget()

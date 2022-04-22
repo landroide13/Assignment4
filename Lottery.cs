@@ -21,9 +21,12 @@ namespace demo
         }
         public void Game()
         {
+            Player pl = new Player(); 
+
+            pl.WeekNumber(this);
+
             foreach (IPlayer player in players)
             {
-                player.Update(this);
                 player.CheckNumber(this);
             }
             Console.WriteLine("");
